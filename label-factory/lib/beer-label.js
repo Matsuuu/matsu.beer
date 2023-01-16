@@ -8,7 +8,7 @@ export class BeerLabel extends LitElement {
             beerStyle: { attribute: "beer-style" },
             abv: { attribute: "abv" },
             beerContains: { attribute: "contains" },
-            themeColor: { attribute: "theme-color" }
+            themeColor: { attribute: "theme-color" },
         };
     }
 
@@ -198,6 +198,10 @@ export class BeerLabel extends LitElement {
         flex-grow: 1;
       }
 
+      #specs p {
+        margin: 0.25rem 0;
+      }
+
       #information {
         flex-grow: 3;
       }
@@ -245,4 +249,3 @@ export class BeerLabel extends LitElement {
 if (!customElements.get("beer-label")) {
     customElements.define("beer-label", BeerLabel);
 }
-
