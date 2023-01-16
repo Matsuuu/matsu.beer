@@ -17,15 +17,29 @@
     />
     <style>
       body {
-        transform: scale(0.4) translate(-50%, -35%);
+        /*transform: scale(0.4) translate(-70%, -65%);*/
         font-family: "Fuzzy Bubbles", cursive;
         font-weight: bold;
         background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
         background-color: #424242;
       }
 
+      html,
+      body,
+      main {
+        height: 100%;
+        width: 100%;
+      }
+
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+
       beer-label {
-        margin-bottom: 4rem;
+        flex-basis: 45%;
+        --size-scale: 0.4;
       }
     </style>
   </head>

@@ -1,4 +1,5 @@
 import { LitElement, html, css } from "lit";
+import { annotate } from "rough-notation";
 import "webcomponent-qr-code";
 
 export class BeerLabel extends LitElement {
@@ -37,6 +38,17 @@ export class BeerLabel extends LitElement {
         }
     }
 
+    firstUpdated() {
+        // setTimeout(() => {
+
+        //     const beerStyle = /** @type {HTMLElement} */ (
+        //         this.shadowRoot.querySelector(".style-bubble")
+        //     );
+        //     const annotation = annotate(beerStyle, { type: "circle" });
+        //     annotation.show();
+        // }, 500);
+    }
+
     setQrCodeColors() {
         const styleTag = this.shadowRoot
             .querySelector("qr-code")
@@ -46,8 +58,8 @@ export class BeerLabel extends LitElement {
     .fg{fill:#FFF;}
     .bg{fill:transparent;}
     svg {
-      width: 200px;
-      height: 200px;
+      width: calc(var(--size-scale) * 200px);
+      height: calc(var(--size-scale) * 200px);
     }
     `;
     }
@@ -92,8 +104,7 @@ export class BeerLabel extends LitElement {
       :host {
         display: flex;
         border-radius: 4px;
-        width: 2100px;
-        height: 1030px;
+        aspect-ratio: 2.02 / 1;
         display: flex;
         position: relative;
         overflow: hidden;
@@ -103,8 +114,10 @@ export class BeerLabel extends LitElement {
           var(--label-theme-color-g),
           var(--label-theme-color-b)
         );
-        border: 10px solid var(--label-theme-color);
+        border: calc(var(--size-scale) * 10px) solid var(--label-theme-color);
         color: var(--label-theme-color);
+
+          --size-scale: 1;
       }
 
       .background {
@@ -121,6 +134,7 @@ export class BeerLabel extends LitElement {
       }
 
       img {
+          width: calc(var(--size-scale) * 65%);
         margin: auto;
         position: absolute;
         left: 0;
@@ -129,21 +143,9 @@ export class BeerLabel extends LitElement {
         bottom: 0;
       }
 
-      .stripe {
-        z-index: 0;
-        position: absolute;
-        top: auto;
-        left: auto;
-        right: -20%;
-        bottom: auto;
-        transform: rotateZ(40deg);
-        width: 200%;
-        box-shadow: 1px 1px 15vw 10vw var(--label-theme-color);
-      }
-
       .beer-info {
         position: absolute;
-        left: 3rem;
+        left: calc(var(--size-scale) * 3rem);
         top: 0;
         bottom: 0;
         height: 100%;
@@ -151,20 +153,20 @@ export class BeerLabel extends LitElement {
         max-width: 25%;
         display: flex;
         flex-direction: column;
-        font-size: 2rem;
+        font-size: calc(var(--size-scale) * 2rem);
         align-items: center;
         justify-content: center;
         text-align: center;
       }
 
       .beer-info h1 {
-        font-size: 5.5rem;
+        font-size: calc(var(--size-scale) * 5rem);
       }
 
       .mandatory-stuff {
         font-weight: normal;
         position: absolute;
-        right: 3rem;
+        right: calc(var(--size-scale) * 3rem);
         top: 5%;
         height: calc(90% - 2rem);
         max-width: 15%;
@@ -177,9 +179,9 @@ export class BeerLabel extends LitElement {
         );
         display: flex;
         flex-direction: column;
-        font-size: 1.4rem;
+        font-size: calc(var(--size-scale) * 1.4rem);
         border-radius: 8px;
-        padding: 1rem;
+        padding: calc(var(--size-scale) * 1rem);
       }
 
       .mandatory-stuff ::slotted(*) {
@@ -199,7 +201,7 @@ export class BeerLabel extends LitElement {
       }
 
       #specs p {
-        margin: 0.25rem 0;
+        margin: calc(var(--size-scale) * 0.25rem) 0;
       }
 
       #information {
@@ -228,17 +230,17 @@ export class BeerLabel extends LitElement {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 1rem;
+        padding: calc(var(--size-scale) * 1rem);
         background: rgba(
           var(--label-theme-color-r),
           var(--label-theme-color-g),
           var(--label-theme-color-b),
           0.8
         );
-        border: 6px solid var(--label-theme-color);
+        border: calc(var(--size-scale) * 6px) solid var(--label-theme-color);
         border-radius: 50%;
-        height: 12rem;
-        width: 12rem;
+        height: calc(var(--size-scale) * 12rem);
+        width: calc(var(--size-scale) * 12rem);
         color: #fff;
         text-align: center;
       }
