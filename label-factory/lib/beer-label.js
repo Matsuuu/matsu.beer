@@ -229,6 +229,7 @@ export class BeerLabel extends LitElement {
 
       .style-bubble {
         display: flex;
+          aspect-ratio: 1/1;
         align-items: center;
         justify-content: center;
         padding: calc(var(--size-scale) * 1rem);
