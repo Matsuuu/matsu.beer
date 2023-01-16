@@ -104,6 +104,7 @@ export class BeerLabel extends LitElement {
       :host {
         display: flex;
         border-radius: 4px;
+          height: fit-content;
         aspect-ratio: 2.02 / 1;
         display: flex;
         position: relative;
