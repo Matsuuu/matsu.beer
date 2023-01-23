@@ -135,7 +135,7 @@ export class BeerLabel extends LitElement {
       }
 
       img {
-        height: 90%;
+        height: 60cqh;
         margin: auto;
         position: absolute;
         left: 0;
