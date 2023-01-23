@@ -58,8 +58,8 @@ export class BeerLabel extends LitElement {
     .fg{fill:#FFF;}
     .bg{fill:transparent;}
     svg {
-      width: calc(var(--size-scale) * 200px);
-      height: calc(var(--size-scale) * 200px);
+      width: 200px;
+      height: 200px;
     }
     `;
     }
@@ -115,7 +115,7 @@ export class BeerLabel extends LitElement {
           var(--label-theme-color-g),
           var(--label-theme-color-b)
         );
-        border: calc(var(--size-scale) * 10px) solid var(--label-theme-color);
+        border: 10px solid var(--label-theme-color);
         color: var(--label-theme-color);
 
           --size-scale: 1;
@@ -135,7 +135,7 @@ export class BeerLabel extends LitElement {
       }
 
       img {
-          width: calc(var(--size-scale) * 65%);
+        height: 90%;
         margin: auto;
         position: absolute;
         left: 0;
@@ -146,7 +146,7 @@ export class BeerLabel extends LitElement {
 
       .beer-info {
         position: absolute;
-        left: calc(var(--size-scale) * 3rem);
+        left: 3rem;
         top: 0;
         bottom: 0;
         height: 100%;
@@ -154,20 +154,20 @@ export class BeerLabel extends LitElement {
         max-width: 25%;
         display: flex;
         flex-direction: column;
-        font-size: calc(var(--size-scale) * 2rem);
+        font-size: 2rem;
         align-items: center;
         justify-content: center;
         text-align: center;
       }
 
       .beer-info h1 {
-        font-size: calc(var(--size-scale) * 5rem);
+        font-size: 5rem;
       }
 
       .mandatory-stuff {
         font-weight: normal;
         position: absolute;
-        right: calc(var(--size-scale) * 3rem);
+        right: 3rem;
         top: 5%;
         height: calc(90% - 2rem);
         max-width: 15%;
@@ -180,9 +180,9 @@ export class BeerLabel extends LitElement {
         );
         display: flex;
         flex-direction: column;
-        font-size: calc(var(--size-scale) * 1.4rem);
+        font-size: 1.4rem;
         border-radius: 8px;
-        padding: calc(var(--size-scale) * 1rem);
+        padding: 1rem;
       }
 
       .mandatory-stuff ::slotted(*) {
@@ -202,7 +202,7 @@ export class BeerLabel extends LitElement {
       }
 
       #specs p {
-        margin: calc(var(--size-scale) * 0.25rem) 0;
+        margin: 0.25rem 0;
       }
 
       #information {
@@ -232,17 +232,17 @@ export class BeerLabel extends LitElement {
           aspect-ratio: 1/1;
         align-items: center;
         justify-content: center;
-        padding: calc(var(--size-scale) * 1rem);
+        padding: 1rem;
         background: rgba(
           var(--label-theme-color-r),
           var(--label-theme-color-g),
           var(--label-theme-color-b),
           0.8
         );
-        border: calc(var(--size-scale) * 6px) solid var(--label-theme-color);
+        border: 6px solid var(--label-theme-color);
         border-radius: 50%;
-        height: calc(var(--size-scale) * 12rem);
-        width: calc(var(--size-scale) * 12rem);
+        height: 12rem;
+        width: 12rem;
         color: #fff;
         text-align: center;
       }
