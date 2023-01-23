@@ -165,6 +165,8 @@ export class BeerLabel extends LitElement {
       }
 
       .mandatory-stuff {
+        container-type: inline-size;
+        inline-size: 15%;
         font-weight: normal;
         position: absolute;
         right: 3rem;
@@ -180,13 +182,13 @@ export class BeerLabel extends LitElement {
         );
         display: flex;
         flex-direction: column;
-        font-size: 1.4rem;
+        font-size: 1.1cqw;
         border-radius: 8px;
         padding: 1rem;
       }
 
       .mandatory-stuff ::slotted(*) {
-        font-size: inherit;
+          font-size: 1.1cqw;
       }
 
       .mandatory-stuff section {
