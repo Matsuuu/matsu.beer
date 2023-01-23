@@ -58,8 +58,8 @@ export class BeerLabel extends LitElement {
     .fg{fill:#FFF;}
     .bg{fill:transparent;}
     svg {
-      width: 200px;
-      height: 200px;
+      width: 80cqw;
+      height: 80cqw;
     }
     `;
     }
@@ -161,7 +161,8 @@ export class BeerLabel extends LitElement {
       }
 
       .beer-info h1 {
-        font-size: 5rem;
+        font-size: 5cqw;
+          margin: 1rem 0;
       }
 
       .mandatory-stuff {
@@ -231,7 +232,7 @@ export class BeerLabel extends LitElement {
 
       .style-bubble {
         display: flex;
-          aspect-ratio: 1/1;
+        aspect-ratio: 1/1;
         align-items: center;
         justify-content: center;
         padding: 1rem;
@@ -243,10 +244,11 @@ export class BeerLabel extends LitElement {
         );
         border: 6px solid var(--label-theme-color);
         border-radius: 50%;
-        height: 12rem;
-        width: 12rem;
+        height: 6cqw;
+        width: 6cqw;
         color: #fff;
         text-align: center;
+          font-size: 1.4cqw;
       }
     `;
     }
