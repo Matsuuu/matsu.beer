@@ -135,7 +135,7 @@ export class BeerLabel extends LitElement {
       }
 
       img {
-        height: 60cqh;
+        height: 35cqw;
         margin: auto;
         position: absolute;
         left: 0;
@@ -183,13 +183,13 @@ export class BeerLabel extends LitElement {
         );
         display: flex;
         flex-direction: column;
-        font-size: 1.1cqw;
+        font-size: 1cqw;
         border-radius: 8px;
         padding: 1rem;
       }
 
       .mandatory-stuff ::slotted(*) {
-          font-size: 1.1cqw;
+          font-size: 1cqw;
       }
 
       .mandatory-stuff section {
