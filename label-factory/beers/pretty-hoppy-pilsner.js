@@ -8,7 +8,7 @@ export const PrettyHoppyPilsner = html`
     contains="Malts and Hops"
     theme-color="120,124,180"
   >
-    <p slot="description">PHP - It's something people swear by, and it's something other evade like the plague. It, however is something that get's the job done.</p>
-    <p slot="description">Whether or not you are the biggest enjoyer of hoppy lagers or hypertext preprocessors, this crushable pilsner will make sure to take your thirst away.</p>
+    <img slot="description" style="filter: invert(1); margin: 0 0 0rem 0" src="https://simplr.fi/assets/simplr_horisontal_black.svg" />
+  <p slot="description">PHP - the langauge and this beer both might be polarizing. You either love it or you hate it. <br> One thing however you can't deny: They both get the job done.</p>
   </beer-label>
 `;

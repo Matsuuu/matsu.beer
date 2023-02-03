@@ -8,7 +8,7 @@ import "./lib/beer-label.js";
 
 const main = document.querySelector("main");
 
-const beer = SimplrSaison;
+const beer = PrettyHoppyPilsner;
 
 const beers = [
     beer, beer, beer
