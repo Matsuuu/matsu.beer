@@ -8,7 +8,7 @@ export const SimplrSaison = html`
     contains="Malts and Hops"
     theme-color="255,109,0"
   >
-    <img slot="description" style="filter: invert(1); margin-top: 0" src="https://simplr.fi/assets/simplr_horisontal_black.svg" />
+    <img slot="description" style="filter: invert(1); margin: 0 0 2rem 0" src="https://simplr.fi/assets/simplr_horisontal_black.svg" />
   <p slot="description">Modern Problems, Simplr Solutions.<br> If this crispy sud and some extreme programming doesn't solve your problem, nothing will.</p>
   </beer-label>
 `;
