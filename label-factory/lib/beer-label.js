@@ -170,7 +170,8 @@ export class BeerLabel extends LitElement {
       .mandatory-stuff {
         container-type: inline-size;
         inline-size: 15%;
-        font-weight: normal;
+          /*font-weight: normal;*/
+          font-weight: bold;
         position: absolute;
         right: 3rem;
         top: 5%;
