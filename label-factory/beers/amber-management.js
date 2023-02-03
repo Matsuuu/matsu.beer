@@ -7,6 +7,7 @@ export const AmberManagement = html`
     abv="4.2%"
     contains="Malts and Hops"
     theme-color="255,191,0"
+    style="--title-size: 3.6cqw"
   >
     <p slot="description">
       Temper is the one thing you can't get rid of, by losing it.

@@ -8,7 +8,28 @@ import "./lib/beer-label.js";
 
 const main = document.querySelector("main");
 
-const beer = PrettyHoppyPilsner;
+let beer = PrettyHoppyPilsner;
+
+const urlParams = new URLSearchParams(window.location.search)
+const beerParam = urlParams.get("beer");
+
+switch (beerParam) {
+    case "php":
+        beer = PrettyHoppyPilsner;
+        break;
+    case "silicon":
+        beer = SiliconValley;
+        break;
+    case "java":
+        beer = JavaIsLife;
+        break;
+    case "amber":
+        beer = AmberManagement;
+        break;
+    case "simplr":
+        beer = SimplrSaison;
+        break;
+}
 
 const beers = [
     beer, beer, beer

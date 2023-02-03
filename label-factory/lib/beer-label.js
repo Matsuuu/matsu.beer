@@ -120,6 +120,7 @@ export class BeerLabel extends LitElement {
         color: var(--label-theme-color);
 
           --size-scale: 1;
+          --title-size: 5cqw;
       }
 
       .background {
@@ -162,7 +163,7 @@ export class BeerLabel extends LitElement {
       }
 
       .beer-info h1 {
-        font-size: 5cqw;
+        font-size: var(--title-size);
           margin: 1rem 0;
       }
 
@@ -246,8 +247,8 @@ export class BeerLabel extends LitElement {
         );
         border: 6px solid var(--label-theme-color);
         border-radius: 50%;
-        height: 5cqw;
-        width: 5cqw;
+        height: var(--title-size);
+        width: var(--title-size);
         color: #fff;
         text-align: center;
           font-size: 1.4cqw;
