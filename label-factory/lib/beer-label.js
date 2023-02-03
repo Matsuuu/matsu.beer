@@ -57,8 +57,10 @@ export class BeerLabel extends LitElement {
     .fg{fill:#FFF;}
     .bg{fill:transparent;}
     svg {
-      width: 80cqw;
-      height: 80cqw;
+        width: 5cqh;
+        height: 5cqh;
+        display: block;
+        margin: auto;
     }
     `;
     }
@@ -114,7 +116,7 @@ export class BeerLabel extends LitElement {
           var(--label-theme-color-g),
           var(--label-theme-color-b)
         );
-        border: 10px solid var(--label-theme-color);
+        border: 6px solid var(--label-theme-color);
         color: var(--label-theme-color);
 
           --size-scale: 1;
@@ -244,8 +246,8 @@ export class BeerLabel extends LitElement {
         );
         border: 6px solid var(--label-theme-color);
         border-radius: 50%;
-        height: 6cqw;
-        width: 6cqw;
+        height: 5cqw;
+        width: 5cqw;
         color: #fff;
         text-align: center;
           font-size: 1.4cqw;
