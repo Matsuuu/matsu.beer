@@ -1,5 +1,4 @@
 import { LitElement, html, css } from "lit";
-import { annotate } from "rough-notation";
 import "webcomponent-qr-code";
 
 export class BeerLabel extends LitElement {
@@ -70,7 +69,7 @@ export class BeerLabel extends LitElement {
 
       <img
         class="front"
-        src="https://matsu.beer/matsu-brewing-logo-full-color-rgb-outline.png"
+        src="/assets/matsu-brewing-logo-full-color-rgb-outline.png"
       />
 
       <div class="beer-info">
@@ -190,6 +189,7 @@ export class BeerLabel extends LitElement {
 
       .mandatory-stuff ::slotted(*) {
           font-size: 1cqw;
+          margin: 0.9rem 0;
       }
 
       .mandatory-stuff section {
