@@ -1,45 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8" />
-  <title>Matsu Brewing</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
+    <meta charset="UTF-8" />
+    <title>Matsu Brewing</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
     href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap"
     rel="stylesheet"
-  />
-  <style>
-    html,
+    />
+    <script src="https://kit.fontawesome.com/9132075664.js" crossorigin="anonymous"></script>
+    <style>
+html,
+body {
+    font-family: "Fuzzy Bubbles", cursive;
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
     body {
-      font-family: "Fuzzy Bubbles", cursive;
-      height: 100%;
-      width: 100%;
+        background: rgb(255,109,0);
+        background: linear-gradient(0deg, rgba(255,109,0,0.8) 30%, rgba(255,191,0,0.8) 100%)   ;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     main {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
-  </style>
-  <body>
-    <main>
-      <h2>There will be beer. And content! And maybe a blog! I promise!</h2>
+    #labels {
+        width: 60%;
+    }
 
-      <a href="https://www.instagram.com/matsu_brewing/">Instagram</a>
+    aside {
 
-      <p>Current collection:</p>
-      <ul>
-        <li>Simplr Saison</li>
-        <li>Cross Stout Scripting</li>
-        <li>Zerg Rush IPA</li>
-        <li>Cascading Style Suds</li>
-        <li>Colour: Amber</li>
-        <li>PHP: a Pretty Hoppy Pilsner</li>
-      </ul>
-    </main>
-  </body>
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    aside > img {
+        max-height: 400px;
+        padding-left:5%;
+    }
+
+    .logos {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    @media only screen and (max-width: 720px) {
+        aside {
+            padding-top: 5%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main {
+            margin-top: 10%;
+        }
+    }
+    </style>
+    <body>
+
+        <aside>
+            <img src="https://raw.githubusercontent.com/Matsuuu/matsu.beer/main/label-factory/assets/matsu-brewing-logo-full-color-rgb-outline.png">
+        </aside>
+        <main>
+            <h2>Matsu Brewing</h2>
+            <p>Homebrewery from Turku, Finland</p>
+            <div class="logos">
+                <a href="https://untappd.com/MatsuBrewing">
+                    <img class="logo" src="https://play-lh.googleusercontent.com/e1f4pqu_nn0p6MgMI0YW3vBWy9GLlim_8ln_9xe1fLcq91Xi8X7r9BeqDy5kMoKDuTM">
+                </a>
+                <a href="https://www.instagram.com/matsu_brewing/">
+                    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png">
+                </a>
+            </div>
+
+            <p>Get in contact:</p>
+            <p>huhta.matias(at)gmail.com</p>
+        </main>
+
+        <script type="module" src="./bundle.js"></script>
+    </body>
 </html>

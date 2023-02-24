@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "web-dev-server --node-resolve --open --watch"
+    "start": "web-dev-server --node-resolve --open --watch",
+    "build": "esbuild ./main-page.js --bundle --outfile=bundle.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
     "@web/dev-server": "^0.1.35"
   },
   "dependencies": {
+    "esbuild": "^0.17.10",
     "lit": "^2.6.1",
     "rough-notation": "^0.5.1",
     "webcomponent-qr-code": "^1.1.0"

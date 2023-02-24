@@ -1,0 +1,29 @@
+{
+  "name": "matsu.beer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "esbuild index.js --bundle --watch --outfile=bundle.js",
+    "serve": "web-dev-server --node-resolve --open --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matsuuu/matsu.beer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matsuuu/matsu.beer/issues"
+  },
+  "homepage": "https://github.com/Matsuuu/matsu.beer#readme",
+  "devDependencies": {
+    "@web/dev-server": "^0.1.35",
+    "esbuild": "^0.17.10"
+  },
+  "dependencies": {
+    "label-factory": "file:label-factory",
+    "lit": "^2.6.1"
+  }
+}

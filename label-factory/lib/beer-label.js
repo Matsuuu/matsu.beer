@@ -71,7 +71,7 @@ export class BeerLabel extends LitElement {
 
       <img
         class="front"
-        src="/assets/matsu-brewing-logo-full-color-rgb-outline.png"
+        src="https://raw.githubusercontent.com/Matsuuu/matsu.beer/main/label-factory/assets/matsu-brewing-logo-full-color-rgb-outline.png"
       />
 
       <div class="beer-info">
