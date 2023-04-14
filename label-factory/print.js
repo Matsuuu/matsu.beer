@@ -8,6 +8,7 @@ import { SimplrSaison } from "./beers/simplr-saison.js";
 import "./lib/beer-label.js";
 import { LagerSeriesCascade } from "./beers/lager-series-cascade.js";
 import { LagerSeriesAriana } from "./beers/lager-series-ariana.js";
+import { MosaicExplorer } from "./beers/mosaic-explorer.js";
 
 const main = document.querySelector("main");
 
@@ -40,6 +41,9 @@ switch (beerParam) {
         break;
     case "lager-ariana":
         beer = LagerSeriesAriana;
+        break;
+    case "mosaic-explorer":
+        beer = MosaicExplorer;
         break;
 }
 
