@@ -6,6 +6,7 @@ import { PrettyHoppyPilsner } from "./beers/pretty-hoppy-pilsner.js";
 import { SiliconValley } from "./beers/silicon-valley.js";
 import { SimplrSaison } from "./beers/simplr-saison.js";
 import "./lib/beer-label.js";
+import { LagerSeriesCascade } from "./beers/lager-series-cascade.js";
 
 const main = document.querySelector("main");
 
@@ -32,6 +33,9 @@ switch (beerParam) {
         break;
     case "ccna":
         beer = CCNA;
+        break;
+    case "lager-cascade":
+        beer = LagerSeriesCascade;
         break;
 }
 
