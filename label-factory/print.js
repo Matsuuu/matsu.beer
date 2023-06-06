@@ -11,6 +11,7 @@ import { LagerSeriesAriana } from "./beers/lager-series-ariana.js";
 import { MosaicExplorer } from "./beers/mosaic-explorer.js";
 import { RaspberryPi } from "./beers/raspberry-pi.js";
 import { JuiceShop } from "./beers/juice-shop.js";
+import { Birramisu } from "./beers/birramisu.js";
 
 const main = document.querySelector("main");
 
@@ -52,6 +53,9 @@ switch (beerParam) {
         break;
     case "juice-shop":
         beer = JuiceShop;
+        break;
+    case "birramisu":
+        beer = Birramisu;
         break;
     
 }
