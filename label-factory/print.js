@@ -12,6 +12,7 @@ import { MosaicExplorer } from "./beers/mosaic-explorer.js";
 import { RaspberryPi } from "./beers/raspberry-pi.js";
 import { JuiceShop } from "./beers/juice-shop.js";
 import { Birramisu } from "./beers/birramisu.js";
+import { BananaSplit } from "./beers/banana-split.js";
 
 const main = document.querySelector("main");
 
@@ -56,6 +57,9 @@ switch (beerParam) {
         break;
     case "birramisu":
         beer = Birramisu;
+        break;
+    case "banana-split":
+        beer = BananaSplit;
         break;
     
 }
