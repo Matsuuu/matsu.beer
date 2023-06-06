@@ -9,6 +9,8 @@ import "./lib/beer-label.js";
 import { LagerSeriesCascade } from "./beers/lager-series-cascade.js";
 import { LagerSeriesAriana } from "./beers/lager-series-ariana.js";
 import { MosaicExplorer } from "./beers/mosaic-explorer.js";
+import { RaspberryPi } from "./beers/raspberry-pi.js";
+import { JuiceShop } from "./beers/juice-shop.js";
 
 const main = document.querySelector("main");
 
@@ -45,6 +47,13 @@ switch (beerParam) {
     case "mosaic-explorer":
         beer = MosaicExplorer;
         break;
+    case "raspberry-pi":
+        beer = RaspberryPi;
+        break;
+    case "juice-shop":
+        beer = JuiceShop;
+        break;
+    
 }
 
 const beers = [
