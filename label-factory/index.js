@@ -6,16 +6,18 @@ import { PrettyHoppyPilsner } from "./beers/pretty-hoppy-pilsner.js";
 import { SiliconValley } from "./beers/silicon-valley.js";
 import { SimplrSaison } from "./beers/simplr-saison.js";
 import "./lib/beer-label.js";
+import { RaspberryPi } from "./beers/raspberry-pi.js";
 
 const main = document.querySelector("main");
 
 const beers = [
-    JavaIsLife,
-    AmberManagement,
-    PrettyHoppyPilsner,
-    SiliconValley,
-    SimplrSaison,
-    CCNA
+    // JavaIsLife,
+    // AmberManagement,
+    // PrettyHoppyPilsner,
+    // SiliconValley,
+    // SimplrSaison,
+    // CCNA
+    RaspberryPi
 ]
 
 render(beers, main);

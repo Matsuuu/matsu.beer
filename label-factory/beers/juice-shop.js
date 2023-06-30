@@ -3,7 +3,7 @@ import { html } from "lit";
 export const JuiceShop = html`
   <beer-label
     beer-name="Juice Shop"
-    beer-style="Fruited Witbier"
+    beer-style="Witbier"
     abv="5.0%"
     contains="Banana, coriander and orange peel"
     theme-color="255,225,53"

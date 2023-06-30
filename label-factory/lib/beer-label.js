@@ -61,6 +61,8 @@ export class BeerLabel extends LitElement {
         height: 5cqh;
         display: block;
         margin: auto;
+        min-height: 8vh;
+        min-width: 8vw;
     }
     `;
     }
@@ -250,9 +252,12 @@ export class BeerLabel extends LitElement {
         border-radius: 50%;
         height: var(--title-size);
         width: var(--title-size);
+        min-width: calc(var(--title-size) * 1.2); 
+        min-height: calc(var(--title-size) * 1.2);
         color: #fff;
         text-align: center;
-          font-size: 1.4cqw;
+        /* font-size: 1.4cqw; */
+        font-size: calc(var(--title-size) * 0.4);
       }
     `;
     }
