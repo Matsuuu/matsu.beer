@@ -123,6 +123,7 @@ export class BeerLabel extends LitElement {
 
           --size-scale: 1;
           --title-size: 5cqw;
+          --bubble-font-multiplier: 1;
       }
 
       .background {
@@ -252,12 +253,11 @@ export class BeerLabel extends LitElement {
         border-radius: 50%;
         height: var(--title-size);
         width: var(--title-size);
-        min-width: calc(var(--title-size) * 1.2); 
-        min-height: calc(var(--title-size) * 1.2);
+        /*min-width: calc(var(--title-size) * 1.2); 
+        min-height: calc(var(--title-size) * 1.2);*/
         color: #fff;
         text-align: center;
-        /* font-size: 1.4cqw; */
-        font-size: calc(var(--title-size) * 0.4);
+        font-size: calc(var(--title-size) * 0.4 * var(--bubble-font-multiplier));
       }
     `;
     }

@@ -7,6 +7,7 @@ import { SiliconValley } from "./beers/silicon-valley.js";
 import { SimplrSaison } from "./beers/simplr-saison.js";
 import "./lib/beer-label.js";
 import { RaspberryPi } from "./beers/raspberry-pi.js";
+import { FourGate } from "./beers/four-gate.js";
 
 const main = document.querySelector("main");
 
@@ -17,7 +18,8 @@ const beers = [
     // SiliconValley,
     // SimplrSaison,
     // CCNA
-    RaspberryPi
+    // RaspberryPi
+    FourGate
 ]
 
 render(beers, main);

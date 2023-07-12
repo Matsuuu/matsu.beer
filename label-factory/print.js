@@ -13,6 +13,7 @@ import { RaspberryPi } from "./beers/raspberry-pi.js";
 import { JuiceShop } from "./beers/juice-shop.js";
 import { Birramisu } from "./beers/birramisu.js";
 import { BananaSplit } from "./beers/banana-split.js";
+import { FourGate } from "./beers/four-gate.js";
 
 const main = document.querySelector("main");
 
@@ -60,6 +61,9 @@ switch (beerParam) {
         break;
     case "banana-split":
         beer = BananaSplit;
+        break;
+    case "four-gate":
+        beer = FourGate;
         break;
     
 }
