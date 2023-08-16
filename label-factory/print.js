@@ -14,6 +14,8 @@ import { JuiceShop } from "./beers/juice-shop.js";
 import { Birramisu } from "./beers/birramisu.js";
 import { BananaSplit } from "./beers/banana-split.js";
 import { FourGate } from "./beers/four-gate.js";
+import { GoldenOrder } from "./beers/golden-order.js";
+import { Netscape } from "./beers/netscape.js";
 
 const main = document.querySelector("main");
 
@@ -65,6 +67,12 @@ switch (beerParam) {
     case "four-gate":
         beer = FourGate;
         break;
+    case "golden-order":
+        beer = GoldenOrder;
+        break;
+        case "netscape":
+            beer = Netscape;
+            break;
     
 }
 
